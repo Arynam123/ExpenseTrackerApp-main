@@ -1,0 +1,221 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expenses-list {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   */
+
+
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  background-image: url('image.webp');
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.input-section select,
+.input-section input[type="number"],
+.input-section input[type="date"] {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Expenses List */
+.expenses-list {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tfoot td {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .input-section {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .input-section label,
+  .input-section select,
+  .input-section input,
+  .input-section button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .input-section button {
+      margin-bottom: 0;
+  }
+
+  .expenses-list {
+      width: 95%;
+  }
+}
